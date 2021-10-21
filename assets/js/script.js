@@ -197,7 +197,7 @@ function saveValues() {
   if (inputKey === "") {
     alert("Please enter your initials and Re-Submit");
   // if input has value and array is empty, push to object and save
-  } else if (highScoresArr === []) {
+  } else if (localStorage.getItem("highscores") === null) {
     highScoresArr.push(newScoreObj);
     localStorage.setItem("highScores", JSON.stringify(highScoresArr));
     // display high-score.html
