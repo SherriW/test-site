@@ -1,0 +1,49 @@
+<!-- Doc Type, Title -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 'Basics' Coding Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="main">
+    <!-- navigation / timer starts -->
+    <header class="flex">
+      <nav>
+        <a href="high-score.html">View high scores</a>
+      </nav>
+      <!-- navigation ends -->
+
+      <!-- timer - if add questions, change number secs for total at start-->
+      <div>Time: <span id="timer">0</span></div>
+    </header>
+    <!-- navigation / timer ends -->
+
+    <!-- quiz start -->
+    <section class="content flex">
+      <div id="start">
+        <h1>JavaScript 'Basics' Coding Quiz</h1>
+        <p>
+          Try to answer the following code-related questions within the time limit.
+        </p>
+        <p id="b-mrgn">
+          Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <button class="btn" id="start-timer">Start Quiz!</button>
+      </div>
+      <div class="hide" id="done">
+        <h1>All Done!</h1>
+        <p id="ad-p"></p>
+        <label for="initials">Enter initials:</label>
+        <input type="text" id="initials" value="" placeholder="Your Initials Here!" maxlength="3">
+        <button class="btn" id="submit-btn">Submit</button>
+      </div>
+    </section>
+
+    <!-- link to scipt.js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
